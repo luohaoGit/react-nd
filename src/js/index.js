@@ -7,7 +7,7 @@ import configureStore from './stores/configureStore'
 import RedBox from 'redbox-react'
 
 const rootEl = document.getElementById('app');
-const store = configureStore(window.__INITIAL_STATE__)
+const store = configureStore(window.__INITIAL_STATE__);
 
 render(
     <AppContainer errorReporter={RedBox}>
@@ -17,7 +17,6 @@ render(
 );
 
 if (module.hot) {
-    console.log("hot.....")
     /**
      * Warning from React Router, caused by react-hot-loader.
      * The warning can be safely ignored, so filter it from the console.

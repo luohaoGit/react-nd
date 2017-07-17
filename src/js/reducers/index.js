@@ -1,9 +1,9 @@
 import {combineReducers} from 'redux'
-import todo from './todo'
+import todos from './todo'
 import showCongratulation from './showCongratulation'
 
 const rootReducer = combineReducers({
-    todo,
+    todos,
     showCongratulation
 });
 
