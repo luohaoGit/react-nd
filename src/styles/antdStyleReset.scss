@@ -1,10 +1,10 @@
 //重置antd-mobile样式
 .am-carousel .slick-dots li.slick-active button:before {
-  color: #1bbc9b;
+  color: #0a86bc;
   opacity: 1;
 }
 .am-navbar-light {
-  color: #1abc9c;
+  color: #0a86bc;
 }
 // 重写radio样式
 .am-radio.am-radio-checked .am-radio-inner:after {
@@ -16,7 +16,7 @@
   height: 10px;
   left: 5px;
   top: 5px;
-  background: #1abc9c;
+  background: #0a86bc;
   border-radius: 50%;
   border: none;
 }
@@ -40,11 +40,11 @@
   right: 3px;
 }
 .am-button-primary:after {
-  border-color: #1abc9c;
+  border-color: #0a86bc;
 }
 .am-button-primary.am-button-touchFeedback {
-  background-color: #18ac8f;
+  background-color: #0a86bc;
 }
 .am-switch input[type="checkbox"]:checked + .checkbox, .am-button-primary {
-  background: #1abc9c;
+  background: #0a86bc;
 }

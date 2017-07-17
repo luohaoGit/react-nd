@@ -80,7 +80,7 @@ class MainSection extends Component {
                 </ul>
                 { showCongratulation &&
                 <NoticeBar mode="closable">
-                    恭喜成功添加三个任务！
+                    Congratulations! You'v added 3 new todos.
                 </NoticeBar>
                 }
 

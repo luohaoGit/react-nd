@@ -8,7 +8,7 @@ import {
 } from '../actions/ActionTypes'
 
 const initialState = [{
-    text: 'luohao todo',
+    text: 'first todo',
     completed: false,
     id: 0
 }];

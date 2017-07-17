@@ -19,19 +19,19 @@ export default class Nav extends Component {
             pathUrl="/coupon"
             icoName="i-youhui42un"
             active={styles.navThree}
-            linkName="一般"
+            linkName="one"
           />
           <NavLink
             pathUrl="/tour"
             icoName="i-zhoubian42un"
             active={styles.navFour}
-            linkName="复杂"
+            linkName="two"
           />
           <NavLink
             pathUrl="/user"
             icoName="i-wode42un"
             active={styles.navFive}
-            linkName="异步"
+            linkName="three"
           />
         </div>
       </div>

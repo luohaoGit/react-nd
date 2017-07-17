@@ -6,9 +6,9 @@ import {SHOW_ALL, SHOW_COMPLETED, SHOW_ACTIVE} from '../../../actions/ActionType
 import styles from './index.scss'
 
 const FILTER_TITLES = {
-    [SHOW_ALL]: '全部',
-    [SHOW_ACTIVE]: '未完成',
-    [SHOW_COMPLETED]: '已完成'
+    [SHOW_ALL]: 'ALL',
+    [SHOW_ACTIVE]: 'UNDONE',
+    [SHOW_COMPLETED]: 'DONE'
 }
 
 export default class Footer extends Component {
@@ -27,7 +27,7 @@ export default class Footer extends Component {
 
     renderTodoCount() {
         const {uncompletedCount} = this.props;
-        const itemword = uncompletedCount > 0 ? uncompletedCount + ' 个任务未完成' : '目前没有任务';
+        const itemword = uncompletedCount > 0 ? uncompletedCount + ' todo(s) to complete' : 'no todo';
 
         return (
             <span>
@@ -45,7 +45,7 @@ export default class Footer extends Component {
                 onClick={onClearCompleted}
                 disabled={completedCount < 1}
             >
-                清除已完成
+                clear completed todo
             </Button>
         )
     }
