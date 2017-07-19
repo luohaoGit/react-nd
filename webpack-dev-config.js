@@ -1,7 +1,5 @@
 /**
  * 开发模式下的webpack配置
- * 在整个项目开发过程中，几乎99%的时间都是在这个模式下进行的
- * 注意。两种模式的配置有较大差异！！
  */
 
 const path = require('path');
@@ -60,14 +58,7 @@ export default {
         // 路径别名, 懒癌福音
         alias:{
             app:path.resolve(__dirname,'src/js'),
-            // 以前你可能这样引用 import { Nav } from '../../components'
-            // 现在你可以这样引用 import { Nav } from 'app/components'
-
             style:path.resolve(__dirname,'src/styles')
-            // 以前你可能这样引用 import "../../../styles/mixins.scss"
-            // 现在你可以这样引用 import "style/mixins.scss"
-
-            // 注意：别名只能在.js文件中使用。
         }
     },
     module: {
